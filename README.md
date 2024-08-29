@@ -10,12 +10,11 @@ The SCARA (Selective Compliant Assembly Robot Arm) robot featured in this projec
 - **3D Model:** Includes a downloadable 3D model for visualizing and understanding the robot’s structure and movement.
 
 ## Hardware Requirements
-- **Arduino Board (e.g., Arduino Uno, Nano)**
+- **Microcontroller**
 - **2 Servo Motors**
 - **Power Supply for Arduino**
 - **Jumper Wires**
 - **Breadboard (optional)**
-- **Mounting Hardware (e.g., brackets, screws)**
 
 ## Software Requirements
 - **Arduino IDE:** For uploading the code to the Arduino board.
@@ -25,13 +24,12 @@ The SCARA (Selective Compliant Assembly Robot Arm) robot featured in this projec
 
 ### 1. Hardware Assembly
 1. **Mount the Servo Motors:** Securely attach the servo motors to the robot’s base and arms.
-2. **Connect the Servos:** Wire the servo motors to the Arduino board. Typically, the servo’s signal wires go to PWM-capable pins on the Arduino.
-3. **Power Supply:** Connect a suitable power supply to the servo motors to ensure they have sufficient power to operate.
+2. **Connect the Servos:** Wire the servo motors to the Arduino board. Typically, the servo’s signal wires go to PWM-capable pins on the Arduino (B - GND / R - VCC / Y - SIGNAL).
 
 ### 2. Software Setup
 1. **Download the Code:** Clone or download the repository containing the Arduino code.
-2. **Install the Arduino IDE:** If you haven't already, download and install the Arduino IDE from [the Arduino website](https://www.arduino.cc/en/software).
-3. **Open the Code:** Open the `scara_robot.ino` file in the Arduino IDE.
+2. **Install the Arduino IDE:** If you haven't already, download and install the Arduino IDE.
+3. **Open the Code:** Open the `scaraRobot.ino` file in the Arduino IDE.
 4. **Upload the Code:** Select your Arduino board type and port from the Tools menu and upload the code to the Arduino board.
 
 ## Usage
@@ -40,25 +38,16 @@ The SCARA (Selective Compliant Assembly Robot Arm) robot featured in this projec
 3. **Observe the Movements:** The SCARA robot should move according to the inverse kinematics calculations and motion planning defined in the code.
 
 ## Code Explanation
-- **Servo Control:** The `Servo` library is used to control the servo motors, allowing precise angle adjustments.
-- **Kinematics Calculations:** Implementations of forward and inverse kinematics algorithms to determine the required angles for the desired end-effector positions.
-- **Motion Planning:** Functions to plan and execute smooth movements of the robot arm.
+- **cinv():** cinve implements the inverse kinematics algorithms to calculate each angle base on x and y coordinates and arms length.
+- **move():** move function is responsable to realize the motion planing across 2 points in space, utilizing acceleration and speed inputs.
+- **drawRectangle():** this function utilizes move function to draw rectangles based on 2 points.
 
 ## 3D Model
 A 3D model of the SCARA robot is available in this repository to help visualize the robot’s design and movement. You can download the model from the [3D Model folder](link-to-3D-model-folder).
 
-## Troubleshooting
-- **Servo Motors Not Responding:** Check the power supply and connections. Ensure the servo control wires are correctly connected to the Arduino.
-- **Unexpected Movements:** Verify that the code is correctly uploaded and that the servo calibration is accurate.
-
-## Contributing
-If you would like to contribute to this project, feel free to submit pull requests or open issues on the repository. Contributions such as enhancements, bug fixes, or additional features are welcome!
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](link-to-license) file for details.
 
 ## Contact
-For any questions or inquiries, please contact [your-email@example.com](mailto:your-email@example.com).
+For any questions or inquiries, please contact [savictor3963@gmail.com](mailto:savictor3963@gmail.com).
 
 ---
 
