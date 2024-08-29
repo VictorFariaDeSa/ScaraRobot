@@ -1,6 +1,7 @@
 # Scara Robot
 
 ## Overview
+![Texto Alternativo](Assets/preview.JPG)
 The SCARA (Selective Compliant Assembly Robot Arm) robot featured in this project is a simple yet effective tool for learning about robotic motion planning and control. This robot utilizes two servo motors to perform planar movements and demonstrates fundamental concepts of inverse kinematics and motion planning.
 
 ## Features
@@ -43,7 +44,7 @@ The SCARA (Selective Compliant Assembly Robot Arm) robot featured in this projec
 - **drawRectangle():** this function utilizes move function to draw rectangles based on 2 points.
 
 ## 3D Model
-A 3D model of the SCARA robot is available in this repository to help visualize the robot’s design and movement. You can download the model from the [3D Model folder](link-to-3D-model-folder).
+A 3D model of the SCARA robot is available in this repository to help visualize the robot’s design and movement. You can download the model from the [3D Model folder](CAD_drawings).
 
 
 ## Contact
