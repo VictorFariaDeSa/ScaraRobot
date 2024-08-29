@@ -1,4 +1,5 @@
 # Scara Robot
+A project for better understanding robotics motion planning
 
 ## Overview
 ![Texto Alternativo](Assets/preview.JPG)
